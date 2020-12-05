@@ -63,5 +63,20 @@ function chunkyMonkey(values, size) {
 //i knew i would need a new array and a "counter" of sorts to keep track of how many times
 //I'd traversed the values to the given size
 
+//Day 4 - Century form Year
+//Given a year, return the century it was in
+//Centuries defined from year 1-100, the second century being 101-200 etc...
+//solve for which century any year is in, and for edge case year 00
+
+// hint: Math.floor
+
+function centuryFromYear(year) {
+    return Math.ceil( year / 100 )
+}
+
+//Math.ceil works well here, better than involving Math.floor with more arithmatic.
+
+
+
 
 
