@@ -38,7 +38,30 @@ function depositProfit(deposit, rate, threshold) {
 //referential logic to it.
 
 //Day Three - Chunky Monkey
-//Wrie a function that splits an array (first argument)
+//Wrie a function that splits an array of values (first argument)
 //into two groups the length of size (second argument)
 //returns a two-dimensional array.
+
+//example:
+// array1 = ["a" "b", "c", "d"] should return [["a", "b"], ["c", "d"]] where size is 2
+// array2 = ["0", "1", "2", "3", "4", "5"] should return [["0", "1", "2", "3"], ["4", "5"]] where size is 4
+
+//hint: .slice()
+
+function chunkyMonkey(values, size) {
+    let chunks = []
+    let count = 0
+    let chunkShare = values.length
+    
+    while (count < chunkShare) {
+        chunks.push(values.slice(count, count += size))
+    }
+    return chunks
+}
+
+//again, could probably use a refactor here but this rolled right out for me logically
+//i knew i would need a new array and a "counter" of sorts to keep track of how many times
+//I'd traversed the values to the given size
+
+
 
