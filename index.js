@@ -16,13 +16,13 @@ function candies(children, candy) {
 //Math.floor() is a static method of Math in js. It returns a number representing
 //the largest integer less than or equal to the specified number. 
 
-//other solutions include...
+// **************** //
 
 //Day Two - Deposit Profit
 //You have deposited a specific amount of dollars into a bank account.
 //Each year, the balance increases by the same annual growth rate.
 //Solve for how long it would take the balance to reach a given threshold
-//(assuming not additional deposits are made)
+//(assuming no additional deposits are made)
 
 function depositProfit(deposit, rate, threshold) {
     let yearsToMature = 0
