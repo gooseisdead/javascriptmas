@@ -76,7 +76,9 @@ function centuryFromYear(year) {
 
 //Math.ceil works well here, better than involving Math.floor with more arithmatic.
 
+//Day 5
 
+//Day 6
 
 
 
