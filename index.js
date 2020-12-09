@@ -177,7 +177,26 @@ function displayDiceFace() {
 
 /////////
 
-//Day 9
+//Day 9 Sum of Odd Fibonacci Numbers
+// Create a function that returns the sum of all the odd numbers in a 
+// Fibonacci Sequence up to given number (as an arugument)
+
+function sumOddFibonacciNumbers( num ) {
+  let curr = 1;
+  let prev = 1;
+  let oddSum = curr;
+  
+  while( curr <= num ) {
+      if( curr%2 != 0) {
+          oddSum += curr;
+      }
+      const temp = curr;
+      curr += prev;
+      prev = temp;
+  }
+  
+  return oddSum;
+}
 
 
 
