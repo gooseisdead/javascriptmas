@@ -117,6 +117,67 @@ function countVowelConsonant(str) {
   }
 
   // ..... //
+  
+  // Day 8 - Roll Dice
+  // make a random dice roll
+
+  // const rollBtn = document.querySelector('.roll')
+const dice = document.querySelector('.dice')
+const result = document.querySelector('.result')
+const dots = Array.from(document.querySelectorAll('.dice div'))
+
+rollBtn.addEventListener('click', displayDiceFace)
+
+
+function displayDiceFace() {
+  document.querySelector(".container").classList.remove("hidden")
+  let score = Math.floor(Math.random() * 6) + 1
+  result.innerHTML = `<h2>You rolled a <span>${score}</span></h2>`
+
+  dots.forEach(dot => dot.className = "")
+
+  switch (score) {
+    case 1:
+      dots[4].classList.add('dot')
+      break;
+    case 2:
+      dots[0].classList.add('dot')
+      dots[8].classList.add('dot')
+      break;
+    case 3:
+      dots[0].classList.add('dot')
+      dots[4].classList.add('dot')
+      dots[8].classList.add('dot')
+      break;
+    case 4:
+      dots[0].classList.add('dot')
+      dots[2].classList.add('dot')
+      dots[6].classList.add('dot')
+      dots[8].classList.add('dot')
+      break;
+    case 5:
+      dots[0].classList.add('dot')
+      dots[2].classList.add('dot')
+      dots[4].classList.add('dot')
+      dots[6].classList.add('dot')
+      dots[8].classList.add('dot')
+      break;
+    case 6:
+      dots[0].classList.add('dot')
+      dots[2].classList.add('dot')
+      dots[3].classList.add('dot')
+      dots[5].classList.add('dot')
+      dots[6].classList.add('dot')
+      dots[8].classList.add('dot')
+      break;
+    default:
+  }
+}
+
+/////////
+
+//Day 9
+
 
 
 

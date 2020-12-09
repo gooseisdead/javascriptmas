@@ -1,0 +1,58 @@
+body {
+    background-color: #AEB8FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dice {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #EFE5DC;
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .dice div {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  
+  .dot {
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  
+  span {
+    color: blue;
+    font-size: 2em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .roll {
+    margin: auto;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #ff01ab;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  
