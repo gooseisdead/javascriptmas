@@ -89,7 +89,18 @@ function reverseAString(str) {
 }
 
 
-//Day 6
+//Day 6 - Sort Strings by Length
+//Given an array of strings, create a function to order them from least characters
+//to most.
+
+//Hint: .sort()
+
+function sortByLength(strs) {
+    let sortedArray = 
+        strs.sort((sortedArray, valueLength) => {return sortedArray.length - valueLength.length})
+    return sortedArray;
+}
+
 
 
 
