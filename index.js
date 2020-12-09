@@ -174,6 +174,7 @@ function displayDiceFace() {
   }
 }
 
+
 /////////
 
 //Day 9
