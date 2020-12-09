@@ -63,7 +63,7 @@ function chunkyMonkey(values, size) {
 //i knew i would need a new array and a "counter" of sorts to keep track of how many times
 //I'd traversed the values to the given size
 
-//Day 4 - Century form Year
+//Day 4 - Century from Year
 //Given a year, return the century it was in
 //Centuries defined from year 1-100, the second century being 101-200 etc...
 //solve for which century any year is in, and for edge case year 00
@@ -76,7 +76,18 @@ function centuryFromYear(year) {
 
 //Math.ceil works well here, better than involving Math.floor with more arithmatic.
 
-//Day 5
+//Day 5 - Reverse a String
+//You may need to turn the string into an array before reversing it.
+//Output must be a single string
+
+function reverseAString(str) {
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+
 
 //Day 6
 
