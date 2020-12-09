@@ -101,6 +101,22 @@ function sortByLength(strs) {
     return sortedArray;
 }
 
+// Day 7 - Count Vowel Consonant 
+// Given a string of letters, assign a value of 1 to vowels and 2 to consonants.
+// Return the value of a give string.
+
+// Hints: .split(), .reduce()
+
+function countVowelConsonant(str) {
+
+    return str.split("").reduce(function (accumulator, currentValue) {
+      let i=2;
+      if("aeiou".indexOf(currentValue) != -1) i=1;  
+      return accumulator +i;
+    }, 0);
+  }
+
+  // ..... //
 
 
 
