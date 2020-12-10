@@ -201,5 +201,19 @@ function sumOddFibonacciNumbers( num ) {
 // ........ //
 
 
+function adjacentElementsProduct(nums) {
+  let arrayOfSum = []
 
+  const multi = array =>  {
+       let sum = array[0] * array[1]
+       arrayOfSum.push(sum)       
+  }        
+
+  while(nums.length){
+      multi(nums)
+      nums.shift() 
+  }
+  
+   return arrayOfSum.sort()[arrayOfSum.length - 2]
+}
 
