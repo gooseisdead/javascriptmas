@@ -217,3 +217,26 @@ function adjacentElementsProduct(nums) {
    return arrayOfSum.sort()[arrayOfSum.length - 2]
 }
 
+// Day 11 
+// Avoid Obstacles 
+
+function avoidObstacles(ints) {
+  const sortedArray = ints.sort()
+  
+  let int = 0
+  while(true) {
+      int++;
+      const passThrough = sortedArray.every((el) => {
+          let hump = int;
+          while(true) {
+              if (hump === el) return false
+              if (hump > el) break
+              hump = hump + int
+          }
+          return true
+      })
+      
+      if (passThrough) return int;
+      if (int > Math.max(...sortedArray)) break;
+  }
+}
