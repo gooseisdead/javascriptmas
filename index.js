@@ -240,3 +240,17 @@ function avoidObstacles(ints) {
       if (int > Math.max(...sortedArray)) break;
   }
 }
+
+// Day 12 - Valid Time
+
+function validTime(str) {
+  //  write code here.
+  const [hours, minutes] = str.split(':');
+  if (parseInt(hours) > 23 || parseInt(hours) < 0){
+      return false;
+  }
+  if (parseInt(minutes) > 59 || parseInt(minutes) < 0) {
+      return false;
+  }
+  return true;
+}
